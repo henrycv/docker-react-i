@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+    web:
+        # Workaround to create-react-app bug: https://github.com/facebook/create-react-app/issues/8688#issuecomment-627325545 
+        stdin_open: true 
+        build: 
+            context: .
+            dockerfile: Dockerfile
+            target: dev
+        ports:
+            - "3000:3000"
+        volumes: 
+            - /app/node_modules
+            - .:/app

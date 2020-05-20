@@ -2,15 +2,7 @@ version: '3.7'
 services:
     web:
         build: 
-            context: ../
-            dockerfile: .docker/Dockerfile
-            target: prod
-        volumes: 
-            - ../:/app
-        command: ["npm", "run", "build"]
-    # proxy:
-    #     image: nginx:1.17.10-alpine 
-    #     ports:
-    #         - "8080:80"
-    #     volumes: 
-    #         - ./build:/usr/share/nginx/html
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8080:80"

@@ -1,8 +1,10 @@
 version: '3.7'
 services:
-    web:
+    dock-rea-dev-i-prod:
+        image: dock-rea-prod-i-img
         build: 
-            context: .
-            dockerfile: Dockerfile
+            context: ../
+            dockerfile: .docker/Dockerfile
+        container_name: dock-rea-prod-i-cont
         ports:
             - "8080:80"

@@ -25,7 +25,8 @@ cd docker-react-i
 ### For development 
 1. Exec the following command on your terminal
 ```sh
-docker-compose -f docker-compose-dev.yml up -d --build
+docker-compose -f .docker/docker-compose.dev.yml up --build
+
 ```
 2. Navigate to the following URL: 
 [http://localhost:3000/](http://localhost:3000)
@@ -34,7 +35,7 @@ docker-compose -f docker-compose-dev.yml up -d --build
 ### For production 
 1. Exec the following command on your terminal
 ```sh
-docker-compose up -d --build
+docker-compose -f .docker/docker-compose.yml up --build
 ```
 2. Navigate to the following URL: 
 [http://localhost:8080/](http://localhost:8080)

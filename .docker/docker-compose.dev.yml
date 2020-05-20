@@ -1,12 +1,13 @@
 version: '3.7'
 services:
-    web:
+    dock-rea-dev-i-srv:
         # Workaround to create-react-app bug: https://github.com/facebook/create-react-app/issues/8688#issuecomment-627325545 
         stdin_open: true 
+        image: dock-rea-dev-i-img
         build: 
             context: ../
-            dockerfile: .docker/Dockerfile
-            target: dev
+            dockerfile: .docker/Dockerfile.dev
+        container_name: dock-rea-dev-i-cont
         ports:
             - "3000:3000"
         volumes: 

@@ -3,11 +3,14 @@ services:
     dock-rea-dev-i-srv:
         # Workaround to create-react-app bug: https://github.com/facebook/create-react-app/issues/8688#issuecomment-627325545 
         stdin_open: true 
-        image: dock-rea-dev-i-img
+
+        # The following lines were commented due to the unknow error on DEV build
+        # container_name: dock-rea-dev-i-cont
+        # image: dock-rea-dev-i-img
+        
         build: 
             context: ../
             dockerfile: .docker/Dockerfile.dev
-        container_name: dock-rea-dev-i-cont
         ports:
             - "3000:3000"
         volumes: 

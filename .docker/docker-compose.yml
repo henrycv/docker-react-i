@@ -2,9 +2,9 @@ version: '3.7'
 services:
     dock-rea-dev-i-prod:
         image: dock-rea-prod-i-img
+        container_name: dock-rea-prod-i-cont
         build: 
             context: ../
             dockerfile: .docker/Dockerfile
-        container_name: dock-rea-prod-i-cont
         ports:
             - "8080:80"

@@ -4,7 +4,7 @@ import CommentDetail from "./components/ComponentDetail/CommentDetail";
 import UserService from "./services/UserService";
 
 const App = () => {
-  console.log(UserService.getUsers());
+  console.log("users", JSON.stringify(UserService.getUsers()));
   const users = UserService.getUsers();
   return (
     <div className="ui container comments">

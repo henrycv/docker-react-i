@@ -1,17 +1,11 @@
-import faker from "faker";
-import moment from "moment";
-
 const getUsers = () => {
-  console.log("moment", moment);
-
   return [
     {
       id: 1,
       name: "Leanne Graham",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:30",
+      avatar:
+        "https://s3.amazonaws.com/uifaces/faces/twitter/jedbridges/128.jpg",
       username: "Bret",
       email: "Sincere@april.biz",
       address: {
@@ -19,10 +13,7 @@ const getUsers = () => {
         suite: "Apt. 556",
         city: "Gwenborough",
         zipcode: "92998-3874",
-        geo: {
-          lat: "-37.3159",
-          lng: "81.1496",
-        },
+        geo: { lat: "-37.3159", lng: "81.1496" },
       },
       phone: "1-770-736-8031 x56442",
       website: "hildegard.org",
@@ -35,10 +26,8 @@ const getUsers = () => {
     {
       id: 2,
       name: "Ervin Howell",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:15",
+      avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/ky/128.jpg",
       username: "Antonette",
       email: "Shanna@melissa.tv",
       address: {
@@ -46,10 +35,7 @@ const getUsers = () => {
         suite: "Suite 879",
         city: "Wisokyburgh",
         zipcode: "90566-7771",
-        geo: {
-          lat: "-43.9509",
-          lng: "-34.4618",
-        },
+        geo: { lat: "-43.9509", lng: "-34.4618" },
       },
       phone: "010-692-6593 x09125",
       website: "anastasia.net",
@@ -62,10 +48,9 @@ const getUsers = () => {
     {
       id: 3,
       name: "Clementine Bauch",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:11",
+      avatar:
+        "https://s3.amazonaws.com/uifaces/faces/twitter/evanshajed/128.jpg",
       username: "Samantha",
       email: "Nathan@yesenia.net",
       address: {
@@ -73,10 +58,7 @@ const getUsers = () => {
         suite: "Suite 847",
         city: "McKenziehaven",
         zipcode: "59590-4157",
-        geo: {
-          lat: "-68.6102",
-          lng: "-47.0653",
-        },
+        geo: { lat: "-68.6102", lng: "-47.0653" },
       },
       phone: "1-463-123-4447",
       website: "ramiro.info",
@@ -89,10 +71,8 @@ const getUsers = () => {
     {
       id: 4,
       name: "Patricia Lebsack",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:28",
+      avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/bartjo/128.jpg",
       username: "Karianne",
       email: "Julianne.OConner@kory.org",
       address: {
@@ -100,10 +80,7 @@ const getUsers = () => {
         suite: "Apt. 692",
         city: "South Elvis",
         zipcode: "53919-4257",
-        geo: {
-          lat: "29.4572",
-          lng: "-164.2990",
-        },
+        geo: { lat: "29.4572", lng: "-164.2990" },
       },
       phone: "493-170-9623 x156",
       website: "kale.biz",
@@ -116,10 +93,8 @@ const getUsers = () => {
     {
       id: 5,
       name: "Chelsey Dietrich",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:6",
+      avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/imammuht/128.jpg",
       username: "Kamren",
       email: "Lucio_Hettinger@annie.ca",
       address: {
@@ -127,10 +102,7 @@ const getUsers = () => {
         suite: "Suite 351",
         city: "Roscoeview",
         zipcode: "33263",
-        geo: {
-          lat: "-31.8129",
-          lng: "62.5342",
-        },
+        geo: { lat: "-31.8129", lng: "62.5342" },
       },
       phone: "(254)954-1289",
       website: "demarco.info",
@@ -143,10 +115,9 @@ const getUsers = () => {
     {
       id: 6,
       name: "Mrs. Dennis Schulist",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 3:44",
+      avatar:
+        "https://s3.amazonaws.com/uifaces/faces/twitter/rangafangs/128.jpg",
       username: "Leopoldo_Corkery",
       email: "Karley_Dach@jasper.info",
       address: {
@@ -154,10 +125,7 @@ const getUsers = () => {
         suite: "Apt. 950",
         city: "South Christy",
         zipcode: "23505-1337",
-        geo: {
-          lat: "-71.4197",
-          lng: "71.7478",
-        },
+        geo: { lat: "-71.4197", lng: "71.7478" },
       },
       phone: "1-477-935-8478 x6430",
       website: "ola.org",
@@ -170,10 +138,8 @@ const getUsers = () => {
     {
       id: 7,
       name: "Kurtis Weissnat",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 3:46",
+      avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/iamglimy/128.jpg",
       username: "Elwyn.Skiles",
       email: "Telly.Hoeger@billy.biz",
       address: {
@@ -181,10 +147,7 @@ const getUsers = () => {
         suite: "Suite 280",
         city: "Howemouth",
         zipcode: "58804-1099",
-        geo: {
-          lat: "24.8918",
-          lng: "21.8984",
-        },
+        geo: { lat: "24.8918", lng: "21.8984" },
       },
       phone: "210.067.6132",
       website: "elvis.io",
@@ -197,10 +160,9 @@ const getUsers = () => {
     {
       id: 8,
       name: "Nicholas Runolfsdottir V",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:23",
+      avatar:
+        "https://s3.amazonaws.com/uifaces/faces/twitter/theonlyzeke/128.jpg",
       username: "Maxime_Nienow",
       email: "Sherwood@rosamond.me",
       address: {
@@ -208,10 +170,7 @@ const getUsers = () => {
         suite: "Suite 729",
         city: "Aliyaview",
         zipcode: "45169",
-        geo: {
-          lat: "-14.3990",
-          lng: "-120.7677",
-        },
+        geo: { lat: "-14.3990", lng: "-120.7677" },
       },
       phone: "586.493.6943 x140",
       website: "jacynthe.com",
@@ -224,10 +183,9 @@ const getUsers = () => {
     {
       id: 9,
       name: "Glenna Reichert",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:1",
+      avatar:
+        "https://s3.amazonaws.com/uifaces/faces/twitter/emmandenn/128.jpg",
       username: "Delphine",
       email: "Chaim_McDermott@dana.io",
       address: {
@@ -235,10 +193,7 @@ const getUsers = () => {
         suite: "Suite 449",
         city: "Bartholomebury",
         zipcode: "76495-3109",
-        geo: {
-          lat: "24.6463",
-          lng: "-168.8889",
-        },
+        geo: { lat: "24.6463", lng: "-168.8889" },
       },
       phone: "(775)976-6794 x41206",
       website: "conrad.com",
@@ -251,10 +206,9 @@ const getUsers = () => {
     {
       id: 10,
       name: "Clementina DuBuque",
-      createdAt: moment()
-        .subtract(Math.random(1000, 10000), "hours")
-        .format("MM Do YYYY h:m"),
-      avatar: faker.image.avatar(),
+      createdAt: "05 21st 2020 4:1",
+      avatar:
+        "https://s3.amazonaws.com/uifaces/faces/twitter/nicoleglynn/128.jpg",
       username: "Moriah.Stanton",
       email: "Rey.Padberg@karina.biz",
       address: {
@@ -262,10 +216,7 @@ const getUsers = () => {
         suite: "Suite 198",
         city: "Lebsackbury",
         zipcode: "31428-2261",
-        geo: {
-          lat: "-38.2386",
-          lng: "57.2232",
-        },
+        geo: { lat: "-38.2386", lng: "57.2232" },
       },
       phone: "024-648-3804",
       website: "ambrose.net",

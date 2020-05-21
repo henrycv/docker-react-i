@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDom from "react-dom";
+import CommentDetail from "./components/ComponentDetail/CommentDetail";
+import UserService from "./services/UserService";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  console.log(UserService.getUsers());
+  const users = UserService.getUsers();
+  return (
+    <div className="ui container comments">
+      <div className="ui container comments">
+        {users.map((user) => (
+          <CommentDetail key={user.id} user={user} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDom.render(<App />, document.querySelector("#root"));
